@@ -1,0 +1,16 @@
+<div class="readiness-container">
+  <h2>🏥 Hospital Emergency Readiness Panel</h2>
+
+  
+
+  <div class="incoming-patients">
+    <h3>🚑 Incoming Patients</h3>
+    <div *ngFor="let patient of patients" class="patient-card">
+      <p><strong>Name:</strong> {{ patient.name }}</p>
+      <p><strong>Age:</strong> {{ patient.age }}</p>
+      <p><strong>Injury:</strong> {{ patient.injury }}</p>
+      <p><strong>ETA:</strong> {{ patient.ETA }}</p>
+      <p><strong>Status:</strong> <span class="incoming">{{ patient.status }}</span></p>
+    </div>
+  </div>
+</div>

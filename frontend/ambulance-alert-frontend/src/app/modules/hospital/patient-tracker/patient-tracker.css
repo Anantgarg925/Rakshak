@@ -1,0 +1,54 @@
+.tracker-container {
+  padding: 2rem;
+  background-color: #f3f7f9;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+.empty-state {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin-top: 3rem;
+}
+
+.patient-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  width: 280px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+.vitals {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}

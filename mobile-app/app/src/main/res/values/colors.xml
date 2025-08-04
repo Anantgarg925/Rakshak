@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Emergency Theme Colors -->
+    <color name="emergency_red">#E53935</color>
+    <color name="emergency_red_light">#FFEBEE</color>
+    <color name="emergency_red_dark">#B71C1C</color>
+    <color name="emergency_coral">#FF7043</color>
+    <color name="emergency_coral_light">#FFE0B2</color>
+    <color name="emergency_blue">#1E88E5</color>
+    <color name="emergency_blue_light">#E3F2FD</color>
+    <color name="emergency_gray">#424242</color>
+    <color name="emergency_gray_light">#F5F5F5</color>
+    <color name="emergency_gray_dark">#212121</color>
+    
+    <!-- Success and Status Colors -->
+    <color name="success_green">#4CAF50</color>
+    <color name="success_green_light">#E8F5E8</color>
+    <color name="warning_yellow">#FFC107</color>
+    <color name="warning_yellow_light">#FFF8E1</color>
+    <color name="info_blue">#2196F3</color>
+    <color name="info_blue_light">#E3F2FD</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#FFFFFF</color>
+    <color name="text_disabled">#FFFFFF</color>
+    <color name="text_hint">#FFFFFF</color>
+    
+    <!-- Base Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background">#F5F5F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="border">#E0E0E0</color>
+    <color name="splash_background_dark">#2B303A</color>
+
+
+    
+    <!-- Material Design 3 Colors -->
+    <color name="primaryColor">@color/emergency_red</color> <!-- or any color you want -->
+    <color name="primary">@color/emergency_red</color>
+    <color name="primary_variant">@color/emergency_red_dark</color>
+    <color name="secondary">@color/emergency_coral</color>
+    <color name="secondary_variant">@color/emergency_coral</color>
+    <color name="on_primary">@color/white</color>
+    <color name="on_secondary">@color/white</color>
+    <color name="colorPrimaryDark">@color/emergency_red_dark</color>
+    <color name="colorPrimary">@color/emergency_gray_light</color>
+    <color name="on_background">@color/emergency_gray_dark</color>
+    <color name="on_surface">@color/emergency_gray_dark</color>
+    <color name="error">@color/emergency_red_dark</color>
+    <color name="on_error">@color/white</color>
+</resources>

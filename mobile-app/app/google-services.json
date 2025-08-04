@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "810925617333",
+    "project_id": "rakshak-44ea4",
+    "storage_bucket": "rakshak-44ea4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:810925617333:android:9846b7d1ba43144e68cefc",
+        "android_client_info": {
+          "package_name": "com.example.rakshak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "810925617333-2m6hj9p816i9lrs0g20kuaitiedatfj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rakshak",
+            "certificate_hash": "2915e4e278e302a12e907db36f0d90d1a7ce9cb2"
+          }
+        },
+        {
+          "client_id": "810925617333-c5fpps8n2377r0vul23fgsu3kugk4r7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfkKmQMvfw4onlnEn4kEWbCRnRBHp842U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "810925617333-c5fpps8n2377r0vul23fgsu3kugk4r7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+.bed-status-container {
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.bed-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.bed-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.bed-card:hover {
+  transform: translateY(-5px);
+}
+
+.bed-type {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.bed-count {
+  font-size: 1.5rem;
+  color: #2e86de;
+}
+
+.bed-card.limited .bed-count {
+  color: #e67e22;
+}
+
+.bed-card.full .bed-count {
+  color: #e74c3c;
+}

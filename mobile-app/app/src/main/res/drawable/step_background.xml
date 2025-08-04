@@ -1,0 +1,18 @@
+<!-- res/drawable/step_background.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Active Step -->
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#4CAF50"/> <!-- Green for active -->
+            <size android:width="24dp" android:height="24dp"/>
+        </shape>
+    </item>
+
+    <!-- Inactive Step -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#BDBDBD"/> <!-- Gray for inactive -->
+            <size android:width="24dp" android:height="24dp"/>
+        </shape>
+    </item>
+</selector>

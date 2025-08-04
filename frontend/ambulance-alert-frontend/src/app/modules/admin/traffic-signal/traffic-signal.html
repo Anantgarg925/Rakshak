@@ -1,0 +1,13 @@
+<div class="signal-panel">
+  <h2>🚦 Traffic Signal Control Panel</h2>
+
+  <div class="signal-card" *ngFor="let signal of signals; let i = index">
+    <h4>{{ signal.intersection }}</h4>
+    <p>Status: 
+      <span [class.red]="signal.status === 'RED'" [class.green]="signal.status === 'GREEN'">
+        {{ signal.status }}
+      </span>
+    </p>
+    <button (click)="toggleSignal(i)">Toggle Signal</button>
+  </div>
+</div>

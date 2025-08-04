@@ -1,0 +1,31 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background of progress bar -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="#D3D3D3"/> <!-- light gray -->
+        </shape>
+    </item>
+
+    <!-- Secondary progress (optional) -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="8dp" />
+                <solid android:color="#B0BEC5"/> <!-- grey-blue -->
+            </shape>
+        </clip>
+    </item>
+
+    <!-- Main progress -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="8dp" />
+                <solid android:color="#FF5722"/> <!-- deep orange -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

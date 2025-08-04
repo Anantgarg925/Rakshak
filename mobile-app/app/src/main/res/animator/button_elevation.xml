@@ -1,0 +1,26 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <ripple android:color="?attr/colorControlHighlight">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/primaryColor" />
+                <corners android:radius="8dp" />
+                <padding android:left="12dp" android:top="8dp"
+                    android:right="12dp" android:bottom="8dp"/>
+                <elevation android:height="8dp" />
+            </shape>
+        </ripple>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primaryColor" />
+            <corners android:radius="8dp" />
+            <padding android:left="12dp" android:top="8dp"
+                android:right="12dp" android:bottom="8dp"/>
+            <elevation android:height="4dp" />
+        </shape>
+    </item>
+</selector>

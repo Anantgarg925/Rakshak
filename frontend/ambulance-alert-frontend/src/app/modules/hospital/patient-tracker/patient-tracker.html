@@ -1,0 +1,20 @@
+<div class="tracker-container">
+  <h2 class="title">Live Patient Tracker</h2>
+
+  <div *ngIf="!patients || patients.length === 0" class="empty-state">
+    No patients currently in transit.
+  </div>
+
+  <div *ngIf="patients && patients.length > 0" class="patient-cards">
+    <div class="card" *ngFor="let patient of patients">
+      <h3>{{ patient.name }}</h3>
+      <p><strong>Ambulance ID:</strong> {{ patient.ambulanceId }}</p>
+      <p><strong>Status:</strong> {{ patient.status }}</p>
+      <p><strong>ETA:</strong> {{ patient.eta }} min</p>
+      <div class="vitals">
+        <p><strong>Heart Rate:</strong> {{ patient.heartRate }} bpm</p>
+        <p><strong>Oxygen:</strong> {{ patient.oxygen }}%</p>
+      </div>
+    </div>
+  </div>
+</div>

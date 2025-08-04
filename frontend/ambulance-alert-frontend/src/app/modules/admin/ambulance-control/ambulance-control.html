@@ -1,0 +1,29 @@
+<!-- ambulance-control.html -->
+<div class="panel">
+  <h2 class="heading">Ambulance Control Panel</h2>
+
+  <div *ngIf="sosMessage" class="alert-box">
+    <p>🚨 SOS Alert: {{ sosMessage }}</p>
+  </div>
+
+  <div class="table-wrapper">
+    <table class="alert-table">
+      <thead>
+        <tr>
+          <th>Device ID</th>
+          <th>Location</th>
+          <th>Timestamp</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>DEVICE123</td>
+          <td>Rohini Sector 15</td>
+          <td>2025-06-18T18:30:00Z</td>
+          <td><button class="ack-btn">Acknowledge</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rakshak</string>
+    <string name="app_description">Smart Emergency Alert System</string>
+    <string name="app_name_with_icon">🛡️ Rakshak</string>
+
+    <string name="default_web_client_id" translatable="false">your_google_web_client_id_here</string>
+    <string name="login_success">Successfully signed in</string>
+    <string name="login_failed">Sign in failed. Please try again.</string>
+    <string name="logout_success">Successfully signed out</string>
+    <string name="i_ve_verified_my_email">I\'ve Verified My Email</string>
+    <string name="resend_email">Resend Email</string>
+    <string name="we_ve_sent_a_verification_email_to_your_email_address">We\'ve sent a verification email to your email address.</string>
+    <string name="verify_your_email">Verify Your Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_emergency">Emergency</string>
+    <string name="hint_device_id">Device ID</string>
+    <string name="action_register">Registered Successfully</string>
+    <string name="register_title">Register</string>
+
+    <string name="nav_home">Home</string>
+    <string name="nav_history">History</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="system_active">🟢 System Active</string>
+    <string name="system_inactive">🔴 System Inactive</string>
+    <string name="monitoring_enabled">Real-time monitoring enabled • All sensors operational</string>
+    <string name="monitoring_disabled">Emergency monitoring is currently disabled</string>
+    <string name="start_detection">Start Detection</string>
+    <string name="stop_detection">Stop Detection</string>
+    <string name="monitoring_started">🔄 Automatic monitoring started</string>
+    <string name="monitoring_active">🟢 Accident detection activated</string>
+    <string name="monitoring_stopped">🔴 Accident detection stopped</string>
+
+    <string name="emergency_instructions_title">🚨 Emergency Instructions</string>
+    <string name="emergency_instructions_body">• Hold SOS button for 3 seconds for immediate emergency alert\n• Automatic accident detection is active when monitoring is enabled\n• Emergency services: 108 (Police), 102 (Ambulance), 101 (Fire)\n• Location sharing must be enabled for optimal emergency response</string>
+    <string name="sos_instruction">Hold for 3 seconds to activate SOS</string>
+    <string name="accident_detected">🚨 Accident Detected!</string>
+    <string name="emergency_activated">🚨 Emergency SOS Activated!</string>
+    <string name="emergency_detected">🚨 Emergency Detected!</string>
+    <string name="countdown_message">Automatic accident detection has been triggered. Emergency services will be contacted in 15 seconds unless cancelled.</string>
+    <string name="emergency_services_info">Emergency services: 108 (Medical) • 102 (Ambulance) • 101 (Fire)</string>
+    <string name="cancel_alert">Cancel Alert</string>
+    <string name="send_alert_now">Send Alert Now</string>
+    <string name="alert_cancelled">✅ Emergency alert cancelled</string>
+    <string name="alert_sent">🚑 Emergency alert sent successfully!</string>
+    <string name="help_on_way">Help is on the way. Emergency services have been notified.</string>
+    <string name="false_alarm">False alarm reported successfully</string>
+
+    <string name="admin_control_panel_title">⚙️ Admin Control Panel</string>
+    <string name="active_alerts">Active Alerts</string>
+    <string name="system_status">System Status</string>
+    <string name="alerts_today">Alerts Today</string>
+    <string name="avg_response_min">Avg Response (min)</string>
+    <string name="export_data">📊 Export Data</string>
+    <string name="alert_history_title">📊 Alert History</string>
+    <string name="alert_history_subtitle">Review your emergency alerts and incidents</string>
+    <string name="total_incidents">Total Incidents</string>
+    <string name="filter_today">Today</string>
+    <string name="filter_this_week">This Week</string>
+    <string name="filter_this_month">This Month</string>
+    <string name="filter_all">All</string>
+
+    <string name="sensor_data_title">📊 Real-time Sensor Data</string>
+    <string name="sensor_accelerometer">Accelerometer</string>
+    <string name="sensor_gyroscope">Gyroscope</string>
+    <string name="sensor_gps">GPS Location</string>
+    <string name="sensor_network">Network Signal</string>
+    <string name="sensor_battery">Battery Level</string>
+    <string name="sensor_normal">Normal</string>
+    <string name="sensor_stable">Stable</string>
+    <string name="sensor_active">Active</string>
+    <string name="sensor_connected">Connected</string>
+    <string name="sensor_good">Good</string>
+    <string name="sensors">Sensors</string>
+    <string name="monitor">Monitor</string>
+    <string name="security">Security</string>
+
+    <string name="permission_location">Location permission is required for emergency services</string>
+    <string name="permission_phone">Phone permission is required to make emergency calls</string>
+    <string name="permission_sms">SMS permission is required to send emergency messages</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="refresh">Refresh</string>
+    <string name="loading">Loading…</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="info">Information</string>
+    <string name="todo">TODO</string> <string name="your_safety_our_priority">Your Safety, Our Priority</string>
+    <string name="copyright_notice">© 2025 Rakshak Emergency Systems</string>
+    <string name="advanced_tech_tagline">Advanced Accident Detection Technology</string>
+
+    <string name="content_desc_sos">Emergency SOS Button</string>
+    <string name="content_desc_back">Back</string>
+    <string name="content_desc_menu">Menu</string>
+    <string name="content_desc_app_logo">Application Logo</string>
+    <string name="user_info_format">user_info</string>
+
+</resources>

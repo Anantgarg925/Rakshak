@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_sensor"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/success_green"
+    app:cardBackgroundColor="@color/success_green_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Status Line -->
+        <View
+            android:id="@+id/status_indicator"
+            android:layout_width="4dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/success_green" />
+
+        <!-- Sensor Icon -->
+        <ImageView
+            android:id="@+id/iv_sensor_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_accelerometer"
+            android:contentDescription="Sensor icon"
+            app:tint="@color/success_green" />
+
+        <!-- Sensor Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tv_sensor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Accelerometer"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/emergency_gray_dark" />
+
+                <ImageView
+                    android:id="@+id/iv_status_icon"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_circle"
+                    app:tint="@color/success_green" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_sensor_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motion detection"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/emergency_gray"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_sensor_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9.81"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/emergency_gray_dark"
+                    android:layout_marginEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_sensor_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="m/s²"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@color/emergency_gray"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:id="@+id/tv_sensor_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Active"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/success_green"
+                    android:background="@drawable/status_badge"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="2dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

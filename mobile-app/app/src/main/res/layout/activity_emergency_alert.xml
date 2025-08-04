@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emergency_red"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+         android:id="@+id/progress_indicator"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginBottom="16dp"
+         app:indicatorColor="@color/emergency_red"
+         app:indicatorSize="120dp"
+         app:trackColor="@color/emergency_gray_light"
+         app:trackThickness="8dp"/>
+
+         
+
+    <!-- Emergency Alert Card -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_countdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:gravity="center">
+
+            <!-- Emergency Icon -->
+            <ImageView
+                android:id="@+id/iv_emergency_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_emergency_alert"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Alert Title -->
+            <TextView
+                android:id="@+id/tv_alert_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/emergency_detected"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/emergency_red"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Alert Description -->
+            <TextView
+                android:id="@+id/tv_alert_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="automatic accident detection has been triggered emergency services will be contacted in 15 seconds unless cancelled"
+                android:textSize="16sp"
+                android:textColor="@color/emergency_gray"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.4"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Countdown Display -->
+            <TextView
+                android:id="@+id/tv_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textSize="72sp"
+                android:textStyle="bold"
+                android:textColor="@color/emergency_red"
+                android:layout_marginBottom="32dp" />
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/cancel_alert"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/success_green"
+                    android:background="@drawable/card_background"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <Button
+                    android:id="@+id/btn_send_now"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/send_alert_now"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/emergency_red"
+                    android:background="@drawable/emergency_button_background"
+                    tools:ignore="VisualLintButtonSize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Emergency Info -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:alpha="0.9"
+        android:gravity="center"
+        android:text="emergency_services_108_medical_102_ambulance_101_fire"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+.readiness-container {
+  padding: 30px;
+  background: #fdfdfd;
+  text-align: center;
+}
+
+.bed-status span {
+  font-size: 24px;
+  color: green;
+  font-weight: bold;
+}
+
+.incoming-patients {
+  margin-top: 30px;
+}
+
+.patient-card {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin: 15px auto;
+  padding: 15px;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.incoming {
+  color: orange;
+  font-weight: bold;
+}

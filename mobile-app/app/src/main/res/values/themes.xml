@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base Application Theme -->
+    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/emergency_red</item>
+        <item name="colorPrimaryVariant">@color/emergency_red_dark</item>
+        <item name="colorSecondary">@color/emergency_coral</item>
+        <item name="colorSecondaryVariant">@color/emergency_coral</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorError">@color/emergency_red_dark</item>
+        <item name="colorOnError">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/emergency_gray_dark</item>
+        <item name="colorOnBackground">@color/emergency_gray_dark</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/splash_background_dark</item>
+        <item name="android:navigationBarColor">@color/splash_background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="SplashTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:statusBarColor">@color/emergency_red</item>
+        <item name="android:navigationBarColor">@color/emergency_red</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Emergency Alert Theme -->
+    <style name="EmergencyAlertTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/emergency_red</item>
+        <item name="android:statusBarColor">@color/emergency_red_dark</item>
+        <item name="android:navigationBarColor">@color/emergency_red_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="MaterialCard">
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="EmergencyButton" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/emergency_button_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:elevation">6dp</item>
+        <item name="android:stateListAnimator">@animator/button_elevation</item>
+    </style>
+
+    <style name="OutlineButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/emergency_red</item>
+        <item name="strokeColor">@color/emergency_red</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="android:minHeight">48dp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="EmergencyTitle">
+        <item name="android:textColor">@color/emergency_gray_dark</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:letterSpacing">-0.025</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+
+    <style name="EmergencySubtitle">
+        <item name="android:textColor">@color/emergency_gray</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="EmergencyBody">
+        <item name="android:textColor">@color/emergency_gray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:lineSpacingMultiplier">1.6</item>
+    </style>
+
+    <!-- Status Badge Styles -->
+    <style name="StatusBadgeActive">
+        <item name="android:background">@drawable/status_badge_active</item>
+        <item name="android:textColor">@color/success_green</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="StatusBadgeInactive">
+        <item name="android:background">@drawable/status_badge_inactive</item>
+        <item name="android:textColor">@color/emergency_gray</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- Floating Action Button -->
+    <style name="FloatingActionButton">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:background">@drawable/fab_background</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:stateListAnimator">@animator/fab_elevation</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:tint">@color/white</item>
+    </style>
+
+    <!-- Progress Bar Styles -->
+    <style name="CircularProgress">
+        <item name="android:indeterminateTint">@color/emergency_red</item>
+        <item name="android:indeterminateTintMode">src_in</item>
+    </style>
+
+    <!-- Switch Styles -->
+    <style name="EmergencySwitch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/emergency_red</item>
+        <item name="trackTint">@color/emergency_red_light</item>
+    </style>
+</resources>

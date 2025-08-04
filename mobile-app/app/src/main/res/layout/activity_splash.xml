@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_gradient"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <!-- Logo Section -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="64dp">
+
+        <!-- App Icon with Pulsing Ring -->
+        <FrameLayout
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginBottom="24dp">
+
+            <!-- Pulsing Background Ring -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_ring_pulse"
+                android:alpha="0.3"
+                app:tint="@color/white" />
+
+            <!-- Main App Icon -->
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_shield"
+                android:contentDescription="@string/app_name"
+                app:tint="@color/white" />
+
+        </FrameLayout>
+
+        <!-- App Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rakshak"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:fontFamily="@font/roboto_bold"
+            android:letterSpacing="0.02"
+            android:layout_marginBottom="8dp" />
+
+        <!-- App Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:alpha="0.9"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Smart Emergency Alert System"
+            android:textColor="#D50000"
+            android:textSize="18sp" />
+
+        <!-- App Tagline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/your_safety_our_priority"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Loading Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- Progress Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginBottom="12dp"
+                android:progressDrawable="@drawable/progress_bar_custom"
+                android:progress="0"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0% Complete"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_medium"
+                android:alpha="0.8" />
+
+        </LinearLayout>
+
+        <!-- Current Status -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="32dp">
+
+            <!-- Loading Icon -->
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="16dp"
+                android:alpha="0.2"
+                android:background="@drawable/circle_white_background"
+                android:src="@drawable/ic_shield"
+                app:tint="@color/white"
+                tools:ignore="ImageContrastCheck" />
+
+            <!-- Status Text -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="🛡️ Initializing Security System"
+                    android:textColor="#DD2C00"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Please wait While we prepare your emergency system"
+                    android:textColor="#212121"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Loading Steps Grid -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginTop="32dp">
+
+            <!-- Step 1: Security -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/step_background"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_shield"
+                    app:tint="@color/white"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/security"
+                    android:textColor="#212121"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Step 2: Sensors -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:contentDescription="TODO"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/step_background"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_sensors"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/sensors"
+                    android:textColor="#212121"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Step 3: GPS -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:contentDescription="TODO"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/step_background"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_gps"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="GPS"
+                    android:textColor="#212121"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!-- Step 4: Monitoring -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/step_background"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_monitoring"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/monitor"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="_2025_rakshak_emergency_systems"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_regular"
+            android:alpha="0.6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced accident detection technology"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:fontFamily="@font/roboto_regular"
+            android:alpha="0.5"
+            android:layout_marginTop="4dp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+</LinearLayout>

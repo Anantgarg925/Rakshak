@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@color/border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/iv_alert_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_emergency_alert"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_alert_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🚨 Emergency Alert"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/emergency_gray_dark" />
+
+                <TextView
+                    android:id="@+id/tv_alert_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Resolved"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/success_green"
+                    android:background="@drawable/status_badge_success"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_alert_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan 15, 14:30"
+                android:textSize="14sp"
+                android:textColor="@color/emergency_gray"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tv_alert_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍 MG Road, Bangalore"
+                android:textSize="12sp"
+                android:textColor="@color/emergency_gray"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
