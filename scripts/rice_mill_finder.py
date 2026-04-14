@@ -40,6 +40,9 @@ DISTRICTS = ["Kaithal", "Karnal"]
 QUERY_TEMPLATE = "rice mill in {district}, Haryana, India"
 # Google Places Text Search returns up to 20 results per page; 3 pages = 60 max
 MAX_PAGES = 3
+# Seconds to wait before requesting the next page (Google requires a short delay
+# for the next_page_token to become valid). Can be overridden via --page-delay.
+DEFAULT_PAGE_DELAY = 2
 
 SPREADSHEET_COLUMNS = [
     "Name",
@@ -57,7 +60,9 @@ SPREADSHEET_COLUMNS = [
 # ---------------------------------------------------------------------------
 
 
-def fetch_mills_for_district(gmaps_client: googlemaps.Client, district: str) -> list[dict]:
+def fetch_mills_for_district(
+    gmaps_client: googlemaps.Client, district: str, page_delay: int = DEFAULT_PAGE_DELAY
+) -> list[dict]:
     """Return a list of rice mill details for a given district."""
     query = QUERY_TEMPLATE.format(district=district)
     results = []
@@ -84,7 +89,7 @@ def fetch_mills_for_district(gmaps_client: googlemaps.Client, district: str) -> 
             break
 
         # Google requires a short delay before the next-page token becomes valid
-        time.sleep(2)
+        time.sleep(page_delay)
         response = gmaps_client.places(query=query, page_token=next_page_token)
 
     return results
@@ -98,7 +103,11 @@ def _fetch_place_details(gmaps_client: googlemaps.Client, place_id: str) -> dict
             fields=["formatted_phone_number"],
         )
         return detail_response.get("result", {})
-    except Exception:
+    except googlemaps.exceptions.ApiError as exc:
+        print(f"  Warning: Places API error for place_id={place_id}: {exc}", file=sys.stderr)
+        return {}
+    except Exception as exc:
+        print(f"  Warning: Unexpected error fetching details for place_id={place_id}: {exc}", file=sys.stderr)
         return {}
 
 
@@ -193,6 +202,16 @@ def parse_args() -> argparse.Namespace:
         help="Fuzzy-match similarity threshold (0–100). Default: 80.",
     )
     parser.add_argument(
+        "--page-delay",
+        type=int,
+        default=DEFAULT_PAGE_DELAY,
+        metavar="SECONDS",
+        help=(
+            f"Seconds to wait between paginated Google Maps requests. "
+            f"Default: {DEFAULT_PAGE_DELAY}."
+        ),
+    )
+    parser.add_argument(
         "--log",
         default=None,
         metavar="PATH",
@@ -232,7 +251,7 @@ def main() -> None:
     all_found: list[dict] = []
     for district in DISTRICTS:
         print(f"\nSearching Google Maps for rice mills in {district}…")
-        mills = fetch_mills_for_district(gmaps, district)
+        mills = fetch_mills_for_district(gmaps, district, page_delay=args.page_delay)
         print(f"  Found {len(mills)} result(s) for {district}.")
         all_found.extend(mills)
 
